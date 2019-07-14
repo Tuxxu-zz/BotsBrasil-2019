@@ -11,3 +11,15 @@ $(document).ready(function(){
     }
   });
 });
+
+$(".nav-links a").click(function () {
+  $("#nav-check").prop('checked', false);
+  $(".btn-close").css({"display": "none"});
+});
+$(".nav-btn").click(function () {
+  $(".btn-close").css({"display": "block"});
+});
+$(".btn-close").click(function () {
+  $("#nav-check").prop('checked', false);
+  $(".btn-close").css({"display": "none"});
+});

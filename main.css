@@ -145,6 +145,26 @@ p{
   height: calc(100vh - 50px);
   overflow-y: auto;
 }
+.btn-close{
+  background: #333333 url(img/close-button.svg) no-repeat;
+  background-size: 24px;
+  display: none;
+  position: absolute;
+  z-index: 9;
+  width: 32px;
+  height: 32px;
+  right: 16px;
+  top: 16px;
+}
+.nav > #nav-check:checked ~ .nav-btn > .close-btn {
+  display: block;
+  background-color: red;
+  width: 40px;
+  height: 40px;
+  right: 0px;
+  top: -10px;
+  position: absolute;
+}
 .nav > #nav-check {
   display: none;
 }
@@ -301,6 +321,9 @@ p{
     display: flex;
     align-items: center;
     color: #333333;
+  }
+  .btn-close{
+    display: none;
   }
   .nav-desk{
     display: block;
