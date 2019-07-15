@@ -224,7 +224,6 @@ p{
 }
 .about .container, .schedule .container, .podcast .container, .buy .container{
   margin-top: 128px;
-  margin-bottom: 128px;
   max-width: 360px;
   padding: 16px;
 }
