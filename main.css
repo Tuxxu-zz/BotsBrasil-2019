@@ -42,6 +42,9 @@ h5{
   margin-top: 4px;
   color: #333333;
 }
+#schedule h4{
+  display: none;
+}
 p{
   font-family: Montserrat;
   font-style: normal;
@@ -53,7 +56,7 @@ p{
   color: #333333;
 }
 .button{
-  background: #FF0099;
+  background: #9E00FF;
   border-radius: 8px;
   font-family: Montserrat;
   font-style: normal;
@@ -267,7 +270,84 @@ p{
   font-style: normal;
   font-size: 16px;
 }
+.close-modal {
+  display: none !important;
+}
+.modal{
+  border-radius: 4px !important;
+}
+.card{
+  transition: .5s;
+  border-right: 4px solid white;
+  box-shadow: none !important;
+}
+#schedule .columns.is-centered {
+  border-left: 4px solid white;
+}
+#image{
+  margin-left: -4px;
+}
+.palestrante{
+  font-weight: 600;
+  margin-bottom: -8px;
+  padding-left: 16px;
+}
+.modal-company{
+  font-size: 12px;
+  padding-left: 16px;
+}
+.Desenvolvimento {
+  background-color: #FFC000;
+  margin-top: -8px;
+  padding: 8px 0px;
+}
+.Cases {
+  background-color: #333333;
+  margin-top: -8px;
+  padding: 8px 0px;
+}
+.Unificada {
+  background-color: #FF0099;
+  margin-top: -8px;
+  padding: 8px 0px;
+}
+.business {
+  background-color: #00FFB2;
+  margin-top: -8px;
+  padding: 8px 0px;
+}
+.Criatividade {
+  background-color: #9E00FF;
+  margin-top: -8px;
+  padding: 8px 0px;
+}
+
+figcaption.Desenvolvimento, figcaption.Cases, figcaption.Unificada, figcaption.business, figcaption.Criatividade{
+  padding: 24px 0px;
+}
+
+.Criatividade p, .Cases p, .Unificadas p, .Unificada p, .home .button{
+  color: white;
+}
+.home .button:hover{
+  box-shadow: 4px 4px 16px #61039B;
+  transition: .5s;
+}
+.card img{
+  width: 100%;
+  height: auto;
+}
+
 @media only screen and (min-width: 720px) {
+  #schedule h4{
+    display: block;
+  }
+  .card {
+    border-right: 16px solid white;
+  }
+  #schedule {
+    padding: 40px;
+  }
   h1{
     font-family: Montserrat;
     font-style: normal;
@@ -382,10 +462,11 @@ p{
     background: none;
   }
   .footer {
+    bottom: -40px;
     background:url(img/bot.png) no-repeat center right #333333;
     max-height: 124px;
     padding: 24px;
-    margin: 0;
+    margin: 0 !important;
     min-width: 100%;
   }
   .footer h3, .footer h4, .footer h5{
