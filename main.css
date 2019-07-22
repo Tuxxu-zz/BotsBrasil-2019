@@ -249,14 +249,6 @@ p {
     background: url(img/pattern-line.png) repeat;
 }
 
-.about .container,
-.schedule .container,
-.podcast .container,
-.buy .container {
-    margin-top: 128px;
-    max-width: 360px;
-    padding: 16px;
-}
 
 .about h4 {
     padding-left: 16px;
@@ -280,7 +272,10 @@ p {
 .podcast .button {
     background-color: #FFC000;
 }
-
+.podcast .button:hover{
+  box-shadow: 4px 4px 16px #cebc03;
+    transition: .5s;
+}
 .buy h4 {
     padding-left: 16px;
     border-left: 8px solid #00FFB2;
@@ -404,7 +399,28 @@ figcaption.Criatividade {
     height: auto;
 }
 
+.modal.Criatividade, .modal.Unificada, .modal.business, .modal.Cases, .modal.Desenvolvimento{
+  background-color: white !important;
+}
+.modal.Criatividade p, .modal.Unificada p, .modal.business p, .modal.Cases p, .modal.Desenvolvimento p{
+  color: #333333 !important;
+}
+#about .container, #podcast .container, #buy .container{
+  max-width: 300px !important;
+}
+.schedule {
+  margin-right: 10px;
+}
 @media only screen and (min-width: 720px) {
+  #about .container, #podcast .container, #buy .container{
+    max-width: 400px !important;
+  }
+  .schedule {
+    margin-left: 20px;
+  }
+  .columns .is-gapless .is-mobile .is-centered .is-multiline{
+    margin-left: 20px;
+  }
     #schedule h4 {
         display: block;
     }
@@ -512,16 +528,11 @@ figcaption.Criatividade {
         margin-top: 0;
         max-width: 500px;
     }
-    .home h1,
-    .home h2,
-    .home h3,
-    .home h5 {
+    .home h1, .home h2, .home h3, .home h5 {
         color: #ffffff
     }
-    .about .container,
-    .schedule .container,
-    .podcast .container,
-    .buy .container {
+    .about .container, .schedule .container, .podcast .container,
+     {
         margin-top: 160px;
         margin-bottom: 128px;
         max-width: 500px;
