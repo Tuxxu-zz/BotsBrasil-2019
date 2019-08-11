@@ -47,10 +47,6 @@ h5 {
     color: #333333;
 }
 
-.schedule>h4 {
-    display: none;
-}
-
 p {
     font-family: Montserrat;
     font-style: normal;
@@ -241,7 +237,7 @@ p {
     background: url(img/pattern-gray.png) no-repeat center 580px, url(img/pattern-gray.png) no-repeat center 85px;
 }
 
-.schedule {
+.schedule{
     background: url(img/pattern-purple.png) no-repeat center 592px, url(img/pattern-purple.png) no-repeat center 64px;
 }
 
@@ -255,8 +251,9 @@ p {
     border-left: 8px solid #FF0099;
 }
 
-.schedule h4 {
-    padding-left: 16px;
+.schedule h4, .workshop h4 {
+    margin-left: 16px;
+    padding-left: 16px !important;
     border-left: 8px solid #9E00FF;
 }
 
@@ -324,7 +321,7 @@ p {
     box-shadow: none !important;
 }
 
-#schedule .columns.is-centered {
+#schedule .columns.is-centered, #workshop #schedule .columns.is-centered{
     border-left: 4px solid white;
 }
 
@@ -411,23 +408,77 @@ figcaption.Criatividade {
 .schedule {
   margin-right: 10px;
 }
+.podcast .container{
+  margin-top: 10%;
+}
+.modal-title-Desenvolvimento {
+    border-left: 8px solid #FFC000;
+    padding-left: 16px;
+}
+.modal-title-Cases {
+    border-left: 8px solid #333333;
+    padding-left: 16px;
+}
+.modal-title-Unificada {
+    border-left: 8px solid #FF0099;
+    padding-left: 16px;
+}
+.modal-title-business {
+    border-left: 8px solid #00FFB2;
+    padding-left: 16px;
+}
+.modal-title-Criatividade {
+    border-left: 8px solid #9E00FF;
+    padding-left: 16px;
+}
+section > .workshop {
+  margin-top: 40px;
+}
+.workshop > p{
+    margin: 16px 16px 32px 16px;
+}
+#partners-her .partners-logo{
+  margin: 16px 32px;
+  height: 64px;
+  display: inline-block;
+  vertical-align: middle;
+}
+#partners-walle .partners-logo{
+  margin: 16px 32px;
+  height: 48px;
+  display: inline-block;
+  vertical-align: middle;
+}
+#partners-bb8 .partners-logo{
+  margin: 16px 32px;
+  height: 40px;
+  display: inline-block;
+  vertical-align: middle;
+}
+#partners-friends .partners-logo{
+  margin: 16px 32px;
+  height: 32px;
+  display: inline-block;
+  vertical-align: middle;
+}
+
 @media only screen and (min-width: 720px) {
   #about .container, #podcast .container, #buy .container{
     max-width: 400px !important;
   }
-  .schedule {
+  .schedule, .workshop {
     margin-left: 20px;
   }
   .columns .is-gapless .is-mobile .is-centered .is-multiline{
     margin-left: 20px;
   }
-    #schedule h4 {
+    #schedule h4, #workshop h4 {
         display: block;
     }
     .card {
         border-right: 16px solid white;
     }
-    #schedule {
+    #schedule, #workshop {
         padding: 40px;
     }
     h1 {
@@ -531,7 +582,7 @@ figcaption.Criatividade {
     .home h1, .home h2, .home h3, .home h5 {
         color: #ffffff
     }
-    .about .container, .schedule .container, .podcast .container,
+    .about .container, .schedule .container, .workshop .container, .podcast .container,
      {
         margin-top: 160px;
         margin-bottom: 128px;
@@ -542,7 +593,7 @@ figcaption.Criatividade {
         padding-left: 16px;
         border-left: 8px solid #FF0099;
     }
-    .schedule {
+    .schedule, .workshop {
         background: none;
     }
     .footer {
