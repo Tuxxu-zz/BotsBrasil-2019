@@ -482,6 +482,9 @@ a.workshop{
         margin: auto;
     padding-top: 10%;
   }
+  a.workshop{
+    margin: auto;
+  }
   .schedule, .workshop {
     margin-left: 20px;
   }

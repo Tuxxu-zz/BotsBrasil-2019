@@ -51,7 +51,7 @@ $.ajax({
                 ' </figcaption>' +
                 ' </a>' +
                 '  <br>' +
-                ' </div><div id="' + data[i]['id'] + '" class="modal ' + data[i]['stage'] + '"><h4 class="modal-title-'+ data[i]['stage']+'">Workshop</h4><br><h4>' + data[i]['title'] + '</h4><br><h5>' + data[i]['data'] + '</h5></h4><h5>' + '<a href=' + data[i]['localLink'] + ' target="_blank"><h5>' + data[i]['local'] + '</a></h5><br><p>' + data[i]['description'] + '</p> <hr><h4>' + data[i]['palestrante'] + '</h4><h5>' + data[i]['company'] + '</h5><br><p>' + data[i]['minibio'] + '</p><br><br>'+ '<a href="' +  data[i]['uRLSympla'] + ' target="_blank" class="workshop button">Comprar ingresso</a>'+ '</div>');
+                ' </div><div id="' + data[i]['id'] + '" class="modal ' + data[i]['stage'] + '"><h4 class="modal-title-'+ data[i]['stage']+'">Workshop</h4><br><h4>' + data[i]['title'] + '</h4><br><h5>' + data[i]['data'] + '</h5></h4><h5>' + '<a href=' + data[i]['localLink'] + ' target="_blank"><h5>' + data[i]['local'] + '</a></h5><br><p>' + data[i]['description'] + '</p> <hr><h4>' + data[i]['palestrante'] + '</h4><h5>' + data[i]['company'] + '</h5><br><p>' + data[i]['minibio'] + '</p><br><br>'+ '<a href="' +  data[i]['uRLSympla'] + '  ' + ' target="_blank" class="workshop button">Comprar ingresso</a>'+ '</div>');
             i++;
         }
     }
