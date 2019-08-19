@@ -461,10 +461,26 @@ section > .workshop {
   display: inline-block;
   vertical-align: middle;
 }
+.about .container{
+      margin: 0px 32px;
+}
+h4.walle{
+  border-color: #00FFB2 !important;
+}
+h4.bb8{
+  border-color: #FFC000 !important;
+}
+a.workshop{
+  width: 100%;
+  background-color: #9E00FF;
+}
 
 @media only screen and (min-width: 720px) {
+
   #about .container, #podcast .container, #buy .container{
     max-width: 400px !important;
+        margin: auto;
+    padding-top: 10%;
   }
   .schedule, .workshop {
     margin-left: 20px;
@@ -525,6 +541,9 @@ section > .workshop {
         margin-top: 4px;
         color: #333333;
     }
+    .modal h5{
+      font-size:16px !important;
+        }
     p {
         font-family: Montserrat;
         font-style: normal;
