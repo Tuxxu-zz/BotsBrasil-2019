@@ -445,13 +445,13 @@ section > .workshop {
 }
 #partners-walle .partners-logo{
   margin: 16px 32px;
-  height: 48px;
+  width: 88px;
   display: inline-block;
   vertical-align: middle;
 }
 #partners-bb8 .partners-logo{
   margin: 16px 32px;
-  height: 40px;
+  width: 120px;
   display: inline-block;
   vertical-align: middle;
 }
@@ -461,9 +461,9 @@ section > .workshop {
   display: inline-block;
   vertical-align: middle;
 }
-.about .container{
+/* .about .container{
       margin: 0px 32px;
-}
+} */
 h4.walle{
   border-color: #00FFB2 !important;
 }
